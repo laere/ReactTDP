@@ -13,14 +13,14 @@ module.exports = {
   },
 
   plugins: [
-    new.webpack.HotModuleReplacmentPlugin(),
+    new webpack.HotModuleReplacmentPlugin(),
     new webpack.NoErrorsPlugin()
   ],
 
   module: {
     loaders: [{
       test: /\.js$/,
-      loaders: ['babel'],
+      loaders: 'babel',
       query: {
         presets: ['react', 'es2015']
       }
